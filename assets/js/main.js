@@ -24,6 +24,7 @@
 21. Counter Js
 22. Parallax Js
 23. InHover Active Js
+24. Map JS
 
 ****************************************************/
 
@@ -511,8 +512,9 @@
 			spaceBetween: 30,
 			// direction: 'vertical',
 			loop: true,
+			speed: 500,
 			autoplay: {
-					delay: 6000,
+					delay: 1000,
 				},
 			
 			// If we need pagination
