@@ -28,6 +28,7 @@
     16. cart CSS
     17. meanmenu CSS
     18. footer CSS
+    19. cenema logo
 
 
 **********************************************/
@@ -1159,6 +1160,7 @@ only screen and (min-width: 576px) and (max-width: 767px),
   z-index: 10;
   border-bottom: 1px solid #e5e5e5;
   border-color: rgba(255, 255, 255, 0.1);
+  max-height: 60px;
 }
 
 .header__info-2 {
@@ -1312,22 +1314,27 @@ only screen and (min-width: 576px) and (max-width: 767px),
   color: #16bcdc;
 }
 
+.logo-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 0;
+  margin: auto;
+}
+
 .logo .logo-image img {
+  margin: 5px;
   display: block;
   max-width: 210px;
   padding: 0;
   margin: auto;
+  margin-right: 75px;
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   .logo .logo-image img {
     max-width: 170px;
-  }
-}
-
-@media (max-width: 575px) {
-  .logo .logo-image img {
-    margin-bottom: 0;
   }
 }
 
@@ -3884,7 +3891,11 @@ only screen and (min-width: 576px) and (max-width: 767px),
   padding: 20px;
   position: relative;
   transition: 0.3s;
+  /* max-height: 500px; */
   z-index: 3;
+}
+.product__item a {
+  min-height: 60px;
 }
 
 .product__item:hover {
@@ -4020,6 +4031,7 @@ only screen and (min-width: 576px) and (max-width: 767px),
 }
 
 .product__content {
+
   overflow: hidden;
   padding-bottom: 70px;
 }
@@ -4090,6 +4102,7 @@ only screen and (min-width: 576px) and (max-width: 767px),
 }
 
 .product__content-3 {
+  height: 130px;
   padding-bottom: 0;
   transition: 0.3s;
 }
@@ -5358,6 +5371,8 @@ only screen and (min-width: 1400px) and (max-width: 1600px) {
   color: #222;
   margin-right: 50px;
   color: #b6b6b6;
+  height: 85px;
+  width: 85px;
   background: transparent;
 }
 
@@ -8268,5 +8283,44 @@ only screen and (min-width: 576px) and (max-width: 767px),
     width: 100%;
   }
 }
+
+/* -------------------------------- */
+/* 19.cenema logo
+/* -------------------------------- */
+
+.cenema__logo {
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  justify-self: baseline;
+  width: 40px;
+  transform: rotate(-45deg);
+  z-index: 20;
+  margin: 0;
+  margin-top: 10px;
+  margin-left: 75px;
+}
+.cenema__logo--item{
+  height: 20px;
+  width: 20px;
+  background-color: black;
+  transition: 0.6s;
+  z-index: 50;
+}
+.cenema__logo--item:hover {
+  background-image: linear-gradient(rgba(256, 256, 256, 0.3) 0 0);
+  transform: scale(1.01);
+  z-index: 100;
+}
+.cenema__logo--item:nth-child(1){
+  background-color: green;
+}
+.cenema__logo--item:nth-child(2){
+  background-color: red;
+}
+.cenema__logo--item:nth-child(3){
+  background-color: blue;
+}
+
 
 /*# sourceMappingURL=style.css.map */
