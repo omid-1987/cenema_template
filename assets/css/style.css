@@ -3146,12 +3146,18 @@ only screen and (min-width: 576px) and (max-width: 767px) {
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: scroll;
+  position: relative;
   transition: all 10.5s cubic-bezier(0, 0, 0.2, 1);
+  padding: 0;
 }
 
 
 .slider-content {
   text-align: center;
+  /* background-color: rgba(0, 0, 0, 0.2); */
+  width: 100%;
+  margin: 0;
+  height: 100%;
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px),
@@ -3167,6 +3173,9 @@ only screen and (min-width: 576px) and (max-width: 767px),
   font-size: 18px;
   font-weight: 400;
   color: #ffffff;
+  -webkit-text-stroke: 0.1px #000;
+  text-shadow: 0 0 15px #000;
+  filter: drop-shadow(0 0 15px #000);
 }
 
 .slider-content-2 {
@@ -3187,8 +3196,12 @@ only screen and (min-width: 576px) and (max-width: 767px),
 }
 
 .slider-title {
-  font-weight: 300;
+  font-weight: 500;
   color: #ffffff;
+  -webkit-text-stroke: 0.1px #000;
+  text-shadow: 0 0 15px #000;
+  filter: drop-shadow(0 0 15px #000);
+
 }
 
 .main-slider-paginations {
@@ -3429,7 +3442,7 @@ only screen and (min-width: 992px) and (max-width: 1199px) {
 }
 
 .banner__content {
-  background-color: rgba(1, 1, 1, 0.4);
+  background-color: rgba(1, 1, 1, 0.5);
   position: absolute;
   top: 50%;
   width: 100%;
